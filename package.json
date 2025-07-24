@@ -1,0 +1,36 @@
+{
+  "name": "pass-commit-checker",
+  "version": "1.0.1",
+  "description": "A CLI tool to prevent committing secrets like passwords or SSH keys",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "pass-commit-checker": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohammad-hassani/pass-commit-checker.git"
+  },
+  "scripts": {
+    "postinstall": "node postinstall-global.js"
+  },
+  "keywords": [
+    "git",
+    "commit",
+    "hook",
+    "secrets",
+    "security",
+    "pre-commit",
+    "cli"
+  ],
+  "author": "mohammad-hassani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohammad-hassani/pass-commit-checker/issues"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "is-interactive": "^2.0.0",
+    "prompts": "^2.4.2"
+  }
+}
